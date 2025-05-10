@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'GeneralSans';
+  src: url("/assets/fonts/general-sans/GeneralSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nohemi';
+  src: url("/assets/fonts/nohemi/Nohemi-Regular-BF6438cc58b98fc.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.section-wrapper {
+    position: relative;
+    --max-width: 1110px;
+    --padding: 1.25rem;
+    width: min(var(--max-width), 100% - var(--padding)*2);
+    margin-inline: auto;
+}
+ 
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  display: flex;
+  justify-content:center;
+  padding: 10px 100px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#35945B;
+  border-radius:30px ;
+  color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #35945B;
+  border-radius:30px;
+  color: white;
+}

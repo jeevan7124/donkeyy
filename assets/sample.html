@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        overflow-x: hidden;
+      }
+
+      .pt-20 {
+        padding-top: 5rem;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .h-750px {
+        height: 750px;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .top-180px {
+        top: 180px;
+      }
+
+      .top-500px {
+        top: 500px;
+      }
+
+      .z-20 {
+        z-index: 20;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .space-x-neg-60px > * + * {
+        margin-left: -60px;
+      }
+
+      .font-bold {
+        font-weight: 700;
+      }
+
+      .text-3rem {
+        font-size: 3rem;
+      }
+
+      .leading-tight {
+        line-height: 1.25;
+      }
+
+      .text-black {
+        color: black;
+      }
+
+      .tracking-wide {
+        letter-spacing: 0.025em;
+      }
+
+      .text-1-8rem {
+        font-size: 1.8rem;
+      }
+
+      .font-normal {
+        font-weight: 400;
+      }
+
+      .text-gray-800 {
+        color: #2d3748;
+      }
+
+      .rotate-neg-5deg {
+        transform: rotate(-5deg);
+      }
+
+      .rotate-8deg {
+        transform: rotate(8deg);
+      }
+
+      .rotate-neg-6deg {
+        transform: rotate(-6deg);
+      }
+
+      .rotate-3deg {
+        transform: rotate(3deg);
+      }
+
+      .z-15 {
+        z-index: 15;
+      }
+
+      .z-10 {
+        z-index: 10;
+      }
+
+      .z-20 {
+        z-index: 20;
+      }
+
+      .shadow-lg {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      .shadow-xl {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .shadow-md {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .w-500px {
+        width: 500px;
+      }
+
+      /* Media queries */
+      @media (min-width: 768px) {
+        .md\:text-4-5rem {
+          font-size: 4.5rem;
+        }
+
+        .md\:text-3rem {
+          font-size: 3rem;
+        }
+      }
+
+      /* Specific styles for the green circle */
+      .green-circle {
+        transition: transform 0.05s ease-out;
+      }
+
+      .green-circle img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Image row container */
+      .image-row {
+        transition: transform 0.05s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="pt-20 relative h-750px overflow-hidden">
+      <div class="flex justify-center">
+        <div class="green-circle" id="greenCircle">
+          <img src="./images/Ellipse 2.png" alt="Green Circle" />
+        </div>
+        <div class="text-center absolute top-180px">
+          <h1
+            class="font-bold text-3rem md:text-4-5rem leading-tight text-black tracking-wide"
+          >
+            WHERE WE TRANSFORM
+          </h1>
+          <h2 class="text-1-8rem md:text-3rem font-normal text-gray-800">
+            YOUR IDEAS INTO REALITY
+          </h2>
+        </div>
+      </div>
+      <div
+        class="image-row absolute top-500px z-20 flex items-center justify-center space-x-neg-60px"
+        id="imageRow"
+      >
+        <img
+          src="./images/Web-EG.png"
+          alt="Image One"
+          class="w-500px rotate-neg-5deg z-15 shadow-lg"
+        />
+        <img
+          src="./images/one.png"
+          alt="Image Two"
+          class="w-500px rotate-8deg z-10 shadow-xl"
+        />
+        <img
+          src="./images/two.png"
+          alt="Image Three"
+          class="w-500px rotate-neg-6deg z-10 shadow-lg"
+        />
+        <img
+          src="./images/three.png"
+          alt="Image Four"
+          class="w-500px rotate-3deg z-20 shadow-md"
+        />
+      </div>
+    </section>
+
+    <div
+      style="
+        height: 1500px;
+        background: linear-gradient(to bottom, #f7fafc, #e2e8f0);
+        padding: 20px;
+      "
+    >
+      <h2 style="margin-top: 100px; text-align: center; font-size: 2rem">
+        Scroll down to see the parallax effect
+      </h2>
+      <p style="text-align: center; max-width: 600px; margin: 20px auto">
+        As you scroll, notice how the green circle moves downward and the row of
+        images slides to the left. This creates a dynamic visual effect that
+        adds depth to the page.
+      </p>
+    </div>
+
+    <script>
+      // Get the elements we want to animate
+      const greenCircle = document.getElementById("greenCircle");
+      const imageRow = document.getElementById("imageRow");
+
+      // Set initial positions
+      let lastScrollY = window.scrollY;
+
+      // Function to handle scroll events
+      function handleScroll() {
+        // Current scroll position
+        const scrollY = window.scrollY;
+
+        // Calculate how far down the page we've scrolled
+        // Use this to determine the intensity of the parallax effect
+        const scrollPercent = Math.min(scrollY / 500, 1); // Cap at 1 (100%)
+
+        // Move the green circle down
+        // Start from 0px and move down to 100px based on scroll position
+        const circleTranslateY = scrollY * 0.3; // Adjust this multiplier to change speed
+        greenCircle.style.transform = `translateY(${circleTranslateY}px)`;
+
+        // Move the image row left
+        // Start from 0px and move left to -200px based on scroll position
+        const imageRowTranslateX = -scrollY * 0.5; // Adjust this multiplier to change speed
+        imageRow.style.transform = `translateX(${imageRowTranslateX}px)`;
+
+        // Update last scroll position
+        lastScrollY = scrollY;
+      }
+
+      // Add scroll event listener
+      window.addEventListener("scroll", handleScroll);
+
+      // Initialize position on page load
+      handleScroll();
+    </script>
+  </body>
+</html>

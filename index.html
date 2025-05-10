@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function () {
+  $('.card-slider').slick({
+    infinite: true,           
+    slidesToShow: 2.5,
+    variableWidth:true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 640,
+        settings: { slidesToShow: 1.5 }
+      }
+    ]
+  });
+})
+
+$(document).ready(function(){
+            $('.testimonial-slider').slick({
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 2,
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '0',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+</script>
+ 
+  </head>
+  <header>
+    <div class="section-wrapper">
+    <div class="flex justify-between items-center pt-4">
+    <!--Logo-->
+    <div class="logo">
+      <img src="./assets/images/logo.svg" />
+    </div>
+    <!--Navigation-->
+    <div>
+    <nav class="primary-navigation ">
+      <ul class="flex">
+        <li>
+          <a href="#" class="font-Generalsans font-semibold text-18px px-5 py-2 bg-emerald-100 rounded-full text-sm">Home</a>
+        </li>
+        <li>
+          <a href="#" class="font-Generalsans font-medium text-18px px-5 py-2 rounded-full text-sm">About us</a>
+        </li>
+        <li>
+          <a href="#" class="font-Generalsans font-medium text-18px px-5 py-2 rounded-full text-sm">Works</a>
+        </li>
+        <li class=" ">
+          <a href="#" class="font-Generalsans font-medium text-18px px-5 py-2 rounded-full text-sm">Services
+     
+            <i class="fa-solid fa-chevron-down ml-1"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-Generalsans font-medium px-5 py-2 rounded-full text-sm">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+   </div>
+   <!--Button-->
+    <div class="build-button">
+       <a href="#" class="font-Generalsans font-semibold px-5 py-2 text-18px bg-emerald-200 text-black rounded-2xl">Build with Us</a>
+    </div>
+   </div>
+  </div>
+  </header>
+  <main>
+   <section class="pt-20 relative h-[750px] overflow-hidden">
+      <div class="flex justify-center">
+          <div class="green-circle">
+              <img src="./assets/images/Ellipse 2.png" alt="Green Circle">
+          </div>
+          <div class="text-center absolute top-[180px] ">
+              <h1 class="font-bold text-[3rem] md:text-[4.5rem] leading-tight text-black tracking-wide">
+                  WHERE WE TRANSFORM 
+              </h1>
+              <h2 class="text-[1.8rem] md:text-[3rem] font-normal text-gray-800">
+                  YOUR IDEAS INTO REALITY
+              </h2>
+          </div>
+      </div>
+      <div class="image-row absolute top-[500px] z-20 flex items-center justify-center space-x-[-60px] ">
+        <img src="./assets/images/one.png" alt="Image One" class="w-[600px] rotate-[-5deg] z-[15] shadow-lg">
+        <img src="./assets/images/two.png" alt="Image Two" class="w-[600px] rotate-[8deg] z-[10] shadow-xl">
+        <img src="./assets/images/three.png" alt="Image Three" class="w-[600px] rotate-[-6deg] z-[10] shadow-lg">
+        <img src="./assets/images/four.png" alt="Image Four" class="w-[600px] rotate-[3deg] z-[20] shadow-md">
+      </div>        
+  </section> 
+  <!--Clients section-->
+  <section class="pt-20">
+    <div class="section-wrapper">
+    <div class="flex justify-center">
+      <h1 class="font-Generalsans font-medium text-[40px]">FOR THEM :</h1>
+    </div>
+    <div class="logo flex flex-row mt-[65px] justify-between">
+      <div class="logo-one flex justify-center items-center">
+        <img src="./assets/images/Mitini.png">
+      </div>
+      <div class="logo-two flex justify-center items-center">
+        <img src="./assets/images/Sumbhridhi.png">
+      </div>
+      <div class="logo-three flex justify-center items-center">
+        <img src="./assets/images/Mitini.png">
+      </div>
+      <div class="logo-four flex justify-center items-center">
+        <img src="./assets/images/Sumbhridhi.png">
+      </div>
+    </div>
+   </div>
+  </section>
+  <!--Services section-->
+  <section class="section-wrapper">
+    <div class="flex justify-center pt-20">
+      <h1 class="font-Generalsans font-bold text-[62px] text-[#35945B]">
+        What can we do for you?
+      </h1>
+    </div>
+    <div class="tab mt-[50px] flex mx-auto justify-between overflow-hidden border border-gray-600 shadow-md rounded-[30px]">
+      <button class="tablinks text-[#036438] font-Generalsans font-semibold text-[20px]" onclick="openCity(event, 'Webdevelopment')">Web Development</button>
+      <button class="tablinks text-[#036438] font-Generalsans font-semibold text-[20px]" onclick="openCity(event, 'ITconsulting')">IT Consulting</button>
+      <button class="tablinks text-[#036438] font-Generalsans font-semibold text-[20px]" onclick="openCity(event, 'Branding')">Branding</button>
+    </div>
+    
+    <div id="Webdevelopment" class="tabcontent mt-12">
+      <div class="section-wrapper">
+        <div class="bg-[#1F2937] w-full h-auto rounded-[22px] p-[80px] ">
+          <div class=" flex flex-row gap-[100px]">
+            <div class="w-[349px] h-[370px]">
+              <img src="./assets/images/Illustration_web.png" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 flex flex-col">
+              <p class="font-Generalsans font-normal text-[16px] text-[#EDFFF6] ">Web/App Development</p>
+              <h1 class="font-Generalsans font-semibold text-[48px] text-white leading-[120%] mt-[14px]">Developing<span class="text-[#00C95C]">Products,</span> That Serve You Well</h1>
+              <p class="font-Generalsans font-normal text-[16px] text-white mt-[18px]">At Ikigai Technology, we excel in creating 🌐 web development solutions designed to fit your unique needs. Our dedication to quality guarantees seamless digital experiences that elevate your business. </p>
+              <button
+              class="bg-[#00C95C] w-fit text-white font-mulish font-bold rounded-[26px] px-[36px] py-[10px] md:text-sm mt-[38px]"
+            >
+              LEARN MORE
+            </button>
+            </div>
+          </div>
+          <div class="flex flex-row mt-[100px]  ">
+            <div class="">
+              <h1 class="font-Generalsans font-semibold text-[32px] text-[#EDFFF6]">Specialization</h1>
+              <ul class="space-y-2 mt-2">
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>UI/UX</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>FRONTEND DEVELOPMENT</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>CONTENT MANAGEMENT SYSTEM</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>WEBSITES</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>APP</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>DESIGN SYSTEM</li>
+                 
+              </ul>
+            </div>
+            <div class="relative left-[30%]">
+              <img src="./assets/images/Web-EG.png">
+            </div>
+          </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    
+    <div id="ITconsulting" class="tabcontent mt-12">
+      <div class="section-wrapper">
+        <div class="bg-[#1F2937] w-full h-auto rounded-[22px] p-[80px] ">
+          <div class=" flex flex-row gap-[100px]">
+            <div class="w-[349px] h-[370px]">
+              <img src="./assets/images/Illustration_web.png" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 flex flex-col">
+              <p class="font-Generalsans font-normal text-[16px] text-[#EDFFF6]">Web/App Development</p>
+              <h1 class="font-Generalsans font-semibold text-[48px] text-white leading-[120%] mt-[14px]">Developing<span class="text-[#00C95C]">Products,</span> That Serve You Well</h1>
+              <p class="font-Generalsans font-normal text-[16px] text-white mt-[18px]">At Ikigai Technology, we excel in creating 🌐 web development solutions designed to fit your unique needs. Our dedication to quality guarantees seamless digital experiences that elevate your business. </p>
+              <button
+              class="bg-[#00C95C] w-fit text-white font-mulish font-bold rounded-[26px] px-[36px] py-[10px] md:text-sm mt-[38px]"
+            >
+              LEARN MORE
+            </button>
+            </div>
+          </div>
+          <div class="flex flex-row mt-[100px]  ">
+            <div class="">
+              <h1 class="font-Generalsans font-semibold text-[32px] text-[#EDFFF6]">Specialization</h1>
+              <ul class="space-y-2 mt-2">
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>UI/UX</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>FRONTEND DEVELOPMENT</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>CONTENT MANAGEMENT SYSTEM</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>WEBSITES</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>APP</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>DESIGN SYSTEM</li>
+                 
+              </ul>
+            </div>
+            <div class="relative left-[30%]">
+              <img src="./assets/images/Web-EG.png">
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    
+    <div id="Branding" class="tabcontent mt-12">
+      <div class="section-wrapper">
+        <div class="bg-[#1F2937] w-full h-auto rounded-[22px] p-[80px] ">
+          <div class=" flex flex-row gap-[100px]">
+            <div class="w-[349px] h-[370px]">
+              <img src="./assets/images/Illustration_web.png" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 flex flex-col">
+              <p class="font-Generalsans font-normal text-[16px] text-[#EDFFF6]">Web/App Development</p>
+              <h1 class="font-Generalsans font-semibold text-[48px] text-white leading-[120%] mt-[14px]">Developing<span class="text-[#00C95C]">Products,</span> That Serve You Well</h1>
+              <p class="font-Generalsans font-normal text-[16px] text-white mt-[18px]">At Ikigai Technology, we excel in creating 🌐 web development solutions designed to fit your unique needs. Our dedication to quality guarantees seamless digital experiences that elevate your business. </p>
+              <button
+              class="bg-[#00C95C] w-fit text-white font-mulish font-bold rounded-[26px] px-[36px] py-[10px] md:text-sm mt-[38px]"
+            >
+              LEARN MORE
+            </button>
+            </div>
+          </div>
+          <div class="flex flex-row mt-[100px]  ">
+            <div class="">
+              <h1 class="font-Generalsans font-semibold text-[32px] text-[#EDFFF6]">Specialization</h1>
+              <ul class="space-y-2 mt-2">
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>UI/UX</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>FRONTEND DEVELOPMENT</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>CONTENT MANAGEMENT SYSTEM</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>WEBSITES</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>APP</li>
+                <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>DESIGN SYSTEM</li>
+                 
+              </ul>
+            </div>
+            <div class="relative left-[30%]">
+              <img src="./assets/images/Web-EG.png">
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!--Case studies-->
+  <section class="section-wrapper">
+    <div class="font-Generalsans font-semibold text-[62px] text-[#35945B] flex justify-center pt-[80px]">
+      <h1>Case-studies</h1>
+    </div>
+    <div class="card-slider pt-[48px]">
+    <div class="card-one">
+      <div class="relative w-[450px] h-[640px] bg-[#1F2937] rounded-[22px] px-[40px] py-[60px] mr-4">
+        <i class="fa-solid fa-circle-plus fa-lg text-[#EDFFF6] absolute right-[40px]"></i>
+          <h1 class="font-Generalsans font-semibold text-[#E5E5E5] text-[18px]">CLIENT</h1>
+          <h2 class="font-Generalsans font-semibold text-[#6AFFB9] text-[32px] pt-[8px]">KIDARC</h2>
+          <p class="font-Generalsans font-semibold text-[#E5E5E5] text-[16px] pt-[16px]">Website</p>
+          <ul class="pt-[28px] space-y-[18px]">
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>UI/UX</li>
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>FRONTEND DEVELOPMENT</li>
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>CONTENT MANAGEMENT SYSTEM</li>
+          </ul>
+          <div class="pt-[50px] absolute right-0">
+            <img src="./assets/images/Kidarc.png">
+          </div>
+      </div>
+    </div>
+    <div class="card-two">
+      <div class="relative w-[450px] h-[640px] bg-[#1F2937] rounded-[22px] px-[40px] py-[60px] mr-4">
+        <i class="fa-solid fa-circle-plus fa-lg text-[#EDFFF6] absolute right-[40px]"></i>
+          <h1 class="font-Generalsans font-semibold text-[#E5E5E5] text-[18px]">CLIENT</h1>
+          <h2 class="font-Generalsans font-semibold text-[#6AFFB9] text-[32px] pt-[8px]">FOOD FOR LIFE</h2>
+          <p class="font-Generalsans font-semibold text-[#E5E5E5] text-[16px] pt-[16px]">Website</p>
+          <ul class="pt-[28px] space-y-[18px]">
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>UI/UX</li>
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>FRONTEND DEVELOPMENT</li>
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>CONTENT MANAGEMENT SYSTEM</li>
+          </ul>
+          <div class="pt-[50px] absolute right-0">
+            <img src="./assets/images/Kidarc.png">
+          </div>
+      </div>
+    </div>
+    <div class="card-three">
+      <div class="relative w-[450px] h-[640px] bg-[#1F2937] rounded-[22px] px-[40px] py-[60px] mr-4">
+        <i class="fa-solid fa-circle-plus fa-lg text-[#EDFFF6] absolute right-[40px]"></i>
+          <h1 class="font-Generalsans font-semibold text-[#E5E5E5] text-[18px]">CLIENT</h1>
+          <h2 class="font-Generalsans font-semibold text-[#6AFFB9] text-[32px] pt-[8px]">AGROBIODIVERSITY</h2>
+          <p class="font-Generalsans font-semibold text-[#E5E5E5] text-[16px] pt-[16px]">Website</p>
+          <ul class="pt-[28px] space-y-[18px]">
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>UI/UX</li>
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>FRONTEND DEVELOPMENT</li>
+            <li class="font-Generalsans font-semibold text-[16px] text-[#EDFFF6] flex gap-2 items-center"><i class="fa-solid fa-arrow-right"></i>CONTENT MANAGEMENT SYSTEM</li>
+          </ul>
+          <div class="pt-[50px] absolute right-0">
+            <img src="./assets/images/Kidarc.png">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row gap-[18px] pt-[35px]">
+    <h1 class="font-Nohemi font-bold text-[32px] text-[#009D4C]">Ikigai difference.</h1>
+    <a href="#" class="inline-block border border-[#018445] rounded-[26px]">
+      <button
+        class="bg-transparent text-[#018445] font-Generalsans font-semibold rounded-[32px] px-[42px] py-[10px]"
+      >
+        View More
+      </button>
+    </a>    
+    <p class="font-Generalsans font-bold text-black text-[32px]">professional works by ikigai</p>
+  </div>
+  </section>
+  <!--Experiences section-->
+  <section class="experience-section pt-[100px]">
+    <div class="section-wrapper">
+    <div class="flex flex-row gap-6">
+    <div class="max-w-[450px]">
+      <h1 class="font-Nohemi font-bold text-[62px]">Experiences with <span class="text-[#009D4C]">ikigai!</span><h1>
+      <p class="font-Generalsans font-semibold text-[16px] pt-[28px]">Hear out what our clients have to say about our work and how we made a difference to their business.</p>
+    </div>
+    <div class="client-slider">
+     <div class="client-one w-[460px] h-[280px] bg-[#89E6EE] rounded-[22px]" style="background: linear-gradient(to right, #8BFFB9, #89E6EE);">
+        <div class="">
+          <img src="">
+        </div>
+        <h1 class="font-Generalsans font-bold text-[32px]">Prasanna Shakya</h1>
+        <p>COO, Vision three sixty</p>
+        <p>Working with Ikigai has been a game-changer. Their dedication to quality, innovative design, and detailed ordinated designs. The iterative approach ensured quality. We couldn’t be happier with the results!</p>
+    </div>
+    </div>
+   </div>
+  </section>
+</main>
+  <script src="./assets/js/index.js"></script>
+</html>
